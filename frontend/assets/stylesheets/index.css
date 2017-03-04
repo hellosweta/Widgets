@@ -1,14 +1,16 @@
 .headers {
   border: 3px solid black;
   border-radius: 5px;
-  display: flex;
 
+}
+.all-headers {
+  display: flex;
   flex-direction: row;
 }
-
 .container{
   display: flex;
   border: 5px solid black;
+  flex-direction: column;
 }
 
 .content {

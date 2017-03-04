@@ -13,7 +13,7 @@ class Headers extends React.Component {
       </header>
     ));
     return (
-      <div>
+      <div className = "all-headers">
         {tabTitles}
       </div>
     );
@@ -39,14 +39,16 @@ class Tabs extends React.Component {
     let pane = this.props.panes[this.state.selectedTabIndex];
     return (
       <div className = "container">
+
         <Headers
 
           onTabChosen = {this.selectTab}
           selectedTabIndex = {this.state.selectedTabIndex}
           panes = {this.props.panes}>
         </Headers>
-
+      
         <article className = "content">{pane.content}</article>
+
       </div>
     );
 
